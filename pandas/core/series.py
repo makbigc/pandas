@@ -554,6 +554,9 @@ class Series(base.IndexOpsMixin, generic.NDFrame):
         --------
         numpy.nonzero
         """
+
+        #msg = ("Series.nonzero() is depreciated")
+        #warnings.warn(msg, FutureWarning, stacklevel=2)
         return self._values.nonzero()
 
     def put(self, *args, **kwargs):
