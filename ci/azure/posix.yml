@@ -52,6 +52,10 @@ jobs:
         if [ "$(uname)" == "Linux" ]; then sudo apt-get install -y libc6-dev-i386 $EXTRA_APT; fi
         echo "Creating Environment"
         ci/setup_env.sh
+        echo "Update pip"
+        conda update pip
+        echo "Pip version"
+        pip --version
         pip install pytest-azurepipelines
       displayName: 'Setup environment and build pandas'
     - script: |
