@@ -15,6 +15,7 @@ dependencies:
   - openpyxl
   - pyarrow
   - pytables
+  - pytest>=4.0.2
   - python=3.5.*
   - pytz
   - xarray
@@ -25,7 +26,6 @@ dependencies:
   - pip:
     - python-dateutil==2.5.3
     # universal
-    - pytest>=4.0.2
     - pytest-xdist
     - pytest-mock
     - hypothesis>=3.58.0
