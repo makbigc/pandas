@@ -103,6 +103,12 @@ fi
 echo "activate pandas-dev"
 source activate pandas-dev
 
+echo "update pip"
+conda update pip
+
+echo "install pytest-azurepipelines"
+pip install pytest-azurepipelines
+
 echo
 echo "remove any installed pandas package"
 echo "w/o removing anything else"
